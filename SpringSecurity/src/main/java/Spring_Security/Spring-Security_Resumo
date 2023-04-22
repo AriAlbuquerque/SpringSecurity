@@ -1,0 +1,25 @@
+
+********** Spring Security:
+
+Spring Security é um grupo de filtros de servelet que auxiliam a adição de autendicadores e autorizações ao seu app WEB;
+
+        -Autenticação: Refere-se ao processo de verificação de identidade de um usuário, com base nas credenciais fornecidas;
+                (Quem é?);
+        -Autorização: Refre-se ao processo de determinar se um usuário tem perissão adequada para executar uma tarefa específica ou ler dados específicos;
+                (Pode fazer ou ler isso?);
+        -Princípio: Refere-se ao usuário autenticado no momento;
+        -Autoridade concedida: Refere-se á permisssão do usuário autenticado;
+        -Função: Refere-se a um  grupo de permissões ao usuário autenticado;
+
+  * Para habilitar a segurança iniciar o projeto no Spring Initializer com a dependências: WEB e Spring security ou adiciona-las no POM do projeto:
+             <dependency>
+             <groupID>org.springframework.boot</groupID>
+             <artifactID>spring-boot-starter-security</artifactId>
+             </dependency>
+
+  * Autenticação Simples:
+ O Spring possui algumas configurações para definir os usuários na sua camada de segurança;
+
+ * Geração de usuários em memória:
+ Esta configuração permite criar mais de um usuário e perfis de acesso;
+ Para isso é necessário criar uma classe que estenda WEBSecurityConfigurerAdapter
